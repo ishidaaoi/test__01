@@ -1,0 +1,70 @@
+.c-read {
+  &__post {
+    display: flex;
+    align-items: center;
+    @include mq(o-sp) {
+    }
+  }
+  &__wrap {
+    position: relative;
+    display: inline-block;
+    @include mq(o-sp) {
+    }
+  }
+  &__read {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    font-weight: bold;
+    @include mq(u-sp) {
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+    @include mq(o-sp) {
+      margin-bottom: 20px;
+      line-height: 0.8;
+      border-bottom: transparent 1px solid;
+    }
+    &::before {
+      content: '';
+      border: 0;
+      border-top: solid 2px #411e0a;
+      border-right: solid 2px #411e0a;
+      position: absolute;
+      right: -20%;
+      margin-top: -4px;
+      transform: rotate(45deg);
+      @include mq(u-sp) {
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        right: -20%;
+        margin-top: -4px;
+        transform: rotate(45deg);
+        top: 50%;
+      }
+      @include mq(o-sp) {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: -20%;
+        margin-top: -4px;
+        transform: rotate(45deg);
+        top: 20%;
+      }
+    }
+    &:hover {
+      @include mq(o-sp) {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__sign {
+    @include mq(u-sp) {
+      padding-left: 10px;
+    }
+    @include mq(o-sp) {
+      padding-left: 20px;
+    }
+  }
+}

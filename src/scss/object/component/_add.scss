@@ -1,0 +1,65 @@
+.c-add {
+  &__wrap {
+    text-align: center;
+    @include mq(u-sp) {
+      padding-top: 30px;
+    }
+    @include mq(o-sp) {
+      padding-top: 80px;
+    }
+  }
+  &__more {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    @include mq(u-sp) {
+      width: 280px;
+      height: 50px;
+      font-size: 12px;
+    }
+    @include mq(o-sp) {
+      width: 340px;
+      height: 60px;
+      font-size: 14px;
+    }
+    &::before {
+      content: '';
+      border: 0;
+      border-top: solid 2px $colorWhite;
+      border-right: solid 2px $colorWhite;
+      position: absolute;
+      top: 50%;
+      left: 90%;
+      margin-top: -4px;
+      transform: rotate(45deg);
+      @include mq(u-sp) {
+        width: 8px;
+        height: 8px;
+      }
+      @include mq(o-sp) {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  &__container {
+    @include mq(o-sp) {
+      width: 340px;
+      height: 60px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+    &:hover {
+      @include mq(o-sp) {
+        opacity: 0.7;
+        transition: 0.7s;
+      }
+    }
+  }
+}

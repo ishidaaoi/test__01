@@ -1,0 +1,65 @@
+// breakpoint
+$breakSP: 768;
+$breakPC: 950;
+$breakpoints: (
+  'u-sp': 'print, screen and (max-width: #{$breakSP}px)',
+  'o-sp': 'print, screen and (min-width: #{$breakSP + 1}px)',
+  'sp-pc':
+    'print, screen and (max-width: #{$breakPC}px) and (min-width: #{$breakSP + 1}px)',
+  'o-pc': 'print, screen and (min-width: #{$breakPC + 1}px)',
+) !default;
+@mixin mq($breakpoint) {
+  @media #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}
+
+// ie用
+@mixin ie {
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+@mixin pc-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@mixin sp-container {
+  padding: 0 4vw;
+}
+
+// PATH
+$bgPath: '../../assets/images/';
+
+// COLOR
+$colorWhite: #fff;
+$colorBrown: #411e0a;
+$colorBlue: #004099;
+
+$colorNormal: #2496cd;
+$colorDark: #012c45;
+$colorBlack: #222;
+$colorGray: #666;
+
+// $breakSP: 768;
+// $breakPC: 950;
+// $breakpoints: (
+//   'u-sp': 'print, screen and (max-width: #{$breakSP}px)',
+//   'o-sp': 'print, screen and (min-width: #{$breakSP + 1}px)',
+//   'sp-pc':
+//     'print, screen and (max-width: #{$breakPC}px) and (min-width: #{$breakSP + 1}px)',
+//   'o-pc': 'print, screen and (min-width: #{$breakPC + 1}px)',
+// ) !default;
+// @mixin mq($breakpoint) {
+//   @media #{inspect(map-get($breakpoints, $breakpoint))} {
+//     @content;
+//   }
+// }
+
+// // ie用
+// @mixin ie {
+//   @media all and (-ms-high-contrast: none) {
+//     @content;
+//   }
+// }

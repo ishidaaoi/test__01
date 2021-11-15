@@ -1,0 +1,32 @@
+.c-title {
+  @include mq(u-sp) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  @include mq(o-sp) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  &__heading {
+    color: $colorBrown;
+    text-align: center;
+    font-weight: 900;
+    @include mq(u-sp) {
+      font-size: 45px;
+    }
+    @include mq(o-sp) {
+      font-size: 72px;
+    }
+  }
+  &__sub {
+    color: $colorBrown;
+    text-align: center;
+    font-weight: bold;
+    @include mq(u-sp) {
+      font-size: 16px;
+    }
+    @include mq(o-sp) {
+      font-size: 22px;
+    }
+  }
+}

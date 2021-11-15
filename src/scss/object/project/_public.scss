@@ -1,0 +1,73 @@
+.p-public {
+  background-color: #919b51;
+  color: $colorBrown;
+  @include mq(o-sp) {
+    padding-top: 100px;
+  }
+  &__wrap {
+    @include mq(o-sp) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__container {
+    margin: 0 30px;
+    align-items: center;
+    @include mq(u-sp) {
+      width: 80vw;
+    }
+    @include mq(o-sp) {
+      width: 44.4vw;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    @include mq(u-sp) {
+      font-size: 15px;
+    }
+    @include mq(o-sp) {
+      font-size: 16px;
+    }
+  }
+  &__link {
+    @include mq(u-sp) {
+      font-size: 13px;
+    }
+    @include mq(o-sp) {
+      font-size: 14px;
+    }
+    &:hover {
+      @include mq(o-sp) {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__border {
+    border-bottom: 1px solid $colorBrown;
+    margin-top: 10px;
+    @include mq(o-sp) {
+    }
+  }
+  &__inner {
+    @include mq(u-sp) {
+      margin-top: 8px;
+      margin-left: 58vw;
+    }
+    @include mq(o-sp) {
+      margin-top: 20px;
+      margin-left: 30vw;
+    }
+  }
+  &__list {
+    @include mq(o-sp) {
+      margin-top: 16px;
+    }
+  }
+  &__item {
+    @include mq(o-sp) {
+      margin-top: 10px;
+    }
+  }
+}

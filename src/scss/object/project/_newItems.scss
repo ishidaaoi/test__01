@@ -1,0 +1,213 @@
+.p-newItems {
+  background-color: #6ea5af;
+  &__container {
+    position: relative;
+    &::before {
+      @include mq(o-sp) {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}newitem_03.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 460px;
+        left: 440px;
+      }
+    }
+  }
+  &__list {
+    @include mq(o-sp) {
+      display: flex;
+      justify-content: space-between;
+    }
+    &::before {
+      @include mq(o-sp) {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}newitem_01.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: -300px;
+        left: 60px;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    @include mq(o-sp) {
+    }
+  }
+  &__link {
+    display: inline-block;
+    border-radius: 70px;
+    overflow: hidden;
+    @include mq(u-sp) {
+      width: 240px;
+      height: 240px;
+    }
+    @include mq(o-sp) {
+      width: 300px;
+      height: 300px;
+    }
+    &::before {
+      @include mq(o-sp) {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}fukidashi_01.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        top: 276px;
+        left: -8px;
+        z-index: 3;
+        transform: scale(1, -1);
+      }
+    }
+    &--sec {
+      display: inline-block;
+      border-radius: 70px;
+      overflow: hidden;
+      position: relative;
+      @include mq(u-sp) {
+        width: 240px;
+        height: 240px;
+      }
+      @include mq(o-sp) {
+        width: 300px;
+        height: 300px;
+        top: 200px;
+      }
+    }
+    &--big {
+      display: inline-block;
+      border-radius: 70px;
+      overflow: hidden;
+      @include mq(u-sp) {
+        width: 300px;
+        height: 300px;
+      }
+      @include mq(o-sp) {
+        width: 410px;
+        height: 410px;
+      }
+      &::before {
+        @include mq(o-sp) {
+          content: '';
+          display: block;
+          background-image: url('#{$bgPath}fukidashi_01.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 40px;
+          height: 50px;
+          position: absolute;
+          top: 386px;
+          left: -8px;
+          transform: scale(1, -1);
+        }
+      }
+    }
+  }
+  &__introduction {
+    background-color: #f4eadd;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    position: relative;
+    right: 20px;
+    @include mq(u-sp) {
+      width: 270px;
+    }
+    @include mq(o-sp) {
+      width: 320px;
+      height: 90px;
+    }
+    &::before {
+      @include mq(o-sp) {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}newitem_04.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 390px;
+        left: 60px;
+      }
+    }
+    &--big {
+      background-color: #f4eadd;
+      border-radius: 5px;
+      padding: 15px 20px;
+      margin-top: 20px;
+      position: relative;
+      right: 20px;
+      @include mq(u-sp) {
+        width: 270px;
+      }
+      @include mq(o-sp) {
+        width: 410px;
+      }
+      &::before {
+        @include mq(o-sp) {
+          content: '';
+          display: block;
+          background-image: url('#{$bgPath}newitem_02.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 90px;
+          height: 150px;
+          position: absolute;
+          top: -500px;
+          left: 1110px;
+        }
+      }
+    }
+    &--sec {
+      background-color: #f4eadd;
+      border-radius: 5px;
+      padding: 15px 20px;
+      position: relative;
+      top: -220px;
+      right: 20px;
+      @include mq(u-sp) {
+        width: 270px;
+      }
+      @include mq(o-sp) {
+        width: 320px;
+      }
+      &::before {
+        @include mq(o-sp) {
+          content: '';
+          display: block;
+          background-image: url('#{$bgPath}fukidashi_01.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 40px;
+          height: 50px;
+          position: absolute;
+          top: 92px;
+        }
+      }
+    }
+  }
+  &__text {
+    font-size: 14px;
+    color: $colorBrown;
+    font-weight: bold;
+    @include mq(o-sp) {
+    }
+    &:hover {
+      @include mq(o-sp) {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.l-spFooter {
+  @include mq(o-sp) {
+    display: none;
+  }
+  background-color: $colorBrown;
+  &__list {
+  }
+  &__item {
+    border-bottom: 1px solid #754c24;
+    &--online {
+      border-bottom: 10px solid #533321;
+    }
+  }
+  &__sell {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 14px;
+    padding: 10px 0;
+  }
+  &__index {
+    line-height: 1.5 !important;
+  }
+  &__title {
+    font-size: 3.46666vw;
+    color: $colorWhite;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 10px;
+    color: #dcc3a0;
+    font-weight: bold;
+    line-height: 1;
+    &--more {
+      margin-left: 10px;
+    }
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__sign {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      content: '';
+
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid $colorWhite;
+      border-right: 2px solid $colorWhite;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  &__company {
+    padding-top: 20px;
+    border-bottom: 1px solid #754c24;
+  }
+  &__inner {
+    display: flex;
+    margin-bottom: 8vw;
+    padding: 0 4vw;
+    align-items: center !important;
+  }
+  &__info {
+    color: $colorWhite;
+    font-size: 2.92vw;
+    margin-left: 10px;
+  }
+  &__ {
+  }
+  &__picture {
+    margin-left: 10px;
+  }
+  &__sns {
+    border-bottom: 1px solid #754c24;
+    padding-bottom: 20px;
+  }
+  &__snsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-top: 20px;
+    margin: 20px 80px 0;
+  }
+  &__snsLink {
+    display: inline-block;
+    width: 30px;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+
+  &__closing {
+    margin: 10px 20px 0;
+    color: $colorWhite;
+    padding-bottom: 20px;
+  }
+  &__terms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__privacy {
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+  &__ps {
+    margin-top: 20px;
+    font-size: 8px;
+  }
+  // &__sign {
+  //   position: relative;
+  //   display: inline-block;
+  //   color: #fff;
+  //   margin-left: 94px;
+  //   &::after {
+  //     content: '';
+  //     width: 7px;
+  //     height: 7px;
+  //     border: 0;
+  //     border-top: solid 1px #fff;
+  //     border-right: solid 1px #fff;
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 0;
+  //     margin-top: -4px;
+  //     transform: rotate(45deg);
+  //   }
+  // }
+}

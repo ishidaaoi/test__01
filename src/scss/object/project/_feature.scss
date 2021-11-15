@@ -1,0 +1,144 @@
+.p-feature {
+  background-color: #f4eadd;
+  @include mq(u-sp) {
+    padding-top: 10px;
+  }
+  @include mq(o-sp) {
+    padding-top: 30px;
+  }
+
+  &__wrap {
+    @include mq(u-sp) {
+      margin: 0 20px;
+      padding-bottom: 20px;
+    }
+    @include mq(o-sp) {
+      padding-bottom: 40px;
+    }
+  }
+  &__container {
+    @include mq(u-sp) {
+      align-items: center;
+    }
+    @include mq(o-sp) {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+  &__topic {
+    @include mq(o-sp) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  // &__eyecatch {
+  //   @include mq(u-sp) {
+  //     margin-bottom: 20px;
+  //   }
+  // }
+  &__regard {
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    @include mq(u-sp) {
+      width: 90vw;
+    }
+    @include mq(o-sp) {
+      width: 48vw;
+    }
+    &:hover {
+      @include mq(o-sp) {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.1875em);
+      }
+    }
+  }
+  &__list {
+    @include mq(u-sp) {
+    }
+    @include mq(o-sp) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    display: inline-block;
+    @include mq(u-sp) {
+      margin-top: 40px;
+    }
+    @include mq(o-sp) {
+      width: 18vw;
+      margin-left: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  &__link {
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    @include mq(u-sp) {
+      width: 90vw;
+    }
+    @include mq(o-sp) {
+      width: 18vw;
+    }
+    &:hover {
+      @include mq(o-sp) {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.1875em);
+      }
+    }
+  }
+  &__index {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    @include mq(o-sp) {
+    }
+  }
+  &__mark {
+    height: 20px;
+    background-color: #d3b510;
+    color: $colorWhite;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 2px;
+    @include mq(u-sp) {
+      width: 40px;
+      border-radius: 2px;
+    }
+    @include mq(o-sp) {
+      width: 50px;
+      border-radius: 4px;
+    }
+  }
+  &__date {
+    font-size: 10px;
+    color: #a57d50;
+    margin-left: 10px;
+    font-weight: 600;
+    display: inline-block;
+    @include mq(o-sp) {
+    }
+    &:hover {
+      @include mq(o-sp) {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__title {
+    color: $colorBrown;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    @include mq(o-sp) {
+    }
+    &:hover {
+      @include mq(o-sp) {
+        text-decoration: underline;
+      }
+    }
+  }
+}

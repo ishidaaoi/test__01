@@ -1,0 +1,49 @@
+.c-back {
+  line-height: 0;
+  &__fir {
+    background-image: url('#{$bgPath}back_01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 99;
+    // border-bottom: 1px solid #6ea5af;
+    // &__::before {
+    //   box-shadow: 0 1px 0 0 black;
+    //   z-index: 100;
+    // }
+    @include mq(u-sp) {
+      min-height: 6.2vh;
+    }
+    @include mq(o-sp) {
+      min-height: 32vh;
+    }
+  }
+  // &__firBorder {
+  // }
+  &__sec {
+    background-image: url('#{$bgPath}back_02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 99;
+    @include mq(u-sp) {
+      min-height: 6.2vh;
+    }
+    @include mq(o-sp) {
+      min-height: 32vh;
+    }
+  }
+  &__thir {
+    background-image: url('#{$bgPath}back_03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 99;
+    @include mq(u-sp) {
+      min-height: 6.2vh;
+    }
+    @include mq(o-sp) {
+      min-height: 32vh;
+    }
+  }
+}

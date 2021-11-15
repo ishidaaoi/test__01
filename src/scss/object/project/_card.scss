@@ -1,0 +1,75 @@
+.p-card {
+  align-items: center;
+  @include mq(o-sp) {
+  }
+
+  &__wrap {
+    @include mq(u-sp) {
+      width: 68vw;
+    }
+    @include mq(o-sp) {
+      width: 840px;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+  &__link {
+    display: block;
+    background-image: url('#{$bgPath}price_01.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mq(u-sp) {
+      width: 68vw;
+      height: 68vw;
+    }
+    @include mq(o-sp) {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  &__container {
+    background-color: #f4eadd;
+    padding: 30px 30px 0;
+    color: $colorBrown;
+    @include mq(u-sp) {
+      border-radius: 0 0 10px 0;
+      width: 68vw;
+      height: 500px;
+    }
+    @include mq(o-sp) {
+      width: 440px;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    @include mq(u-sp) {
+      font-size: 15px;
+    }
+    @include mq(o-sp) {
+      font-size: 16px;
+    }
+  }
+  &__text {
+    @include mq(u-sp) {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+    @include mq(o-sp) {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  }
+  &__order {
+    @include mq(o-sp) {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  }
+  &__inner {
+    @include mq(o-sp) {
+      margin-top: 20px;
+      margin-left: 270px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.p-centerSlide {
+  &__item {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    @include mq(o-sp) {
+      width: 7680px;
+    }
+    @include mq(o-sp) {
+      width: 1200px;
+    }
+  }
+  .slick-slide {
+    margin: 0 8px;
+    @include mq(u-sp) {
+    }
+    @include mq(o-sp) {
+      margin: 0 10px;
+    }
+  }
+
+  .js-center-slide {
+    margin: 0 auto;
+    @include mq(u-sp) {
+      max-width: 768px;
+    }
+    @include mq(o-sp) {
+      max-width: 1200px;
+    }
+  }
+  .slick-prev.slick-arrow {
+    &::before {
+      @include mq(o-sp) {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}arrow_left.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+      }
+    }
+    &:hover {
+      @include mq(o-sp) {
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+    }
+  }
+  .slick-next.slick-arrow {
+    &::before {
+      @include mq(o-sp) {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}arrow_right.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+      }
+    }
+    &:hover {
+      @include mq(o-sp) {
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+    }
+  }
+  .slick-prev {
+    @include mq(o-sp) {
+      top: 444px;
+      left: 480px;
+      z-index: 1;
+    }
+  }
+  .slick-next {
+    @include mq(o-sp) {
+      top: 444px;
+      right: 484px;
+      z-index: 1;
+    }
+  }
+  .slick-dots {
+    @include mq(o-sp) {
+      opacity: 1;
+      color: #fff;
+    }
+  }
+
+  .slick-dots li.slick-active button:before {
+    @include mq(o-sp) {
+      content: '●';
+      opacity: 1;
+      color: #fff;
+    }
+  }
+
+  .slick-dots li button:before {
+    @include mq(o-sp) {
+      content: '◯';
+      font-weight: bold;
+      text-align: center;
+      opacity: 1;
+      color: #fff;
+      -webkit-text-stroke: 1px #fff;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.p-deployment {
+  background-color: #919b51;
+  @include mq(o-sp) {
+    padding-top: 60px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(o-sp) {
+      flex-wrap: wrap;
+    }
+  }
+  &__container {
+    @include mq(u-sp) {
+      margin-left: 12px;
+    }
+    &:hover {
+      @include mq(o-sp) {
+        opacity: 0.8;
+        transition: 0.7s;
+      }
+    }
+  }
+  &__inner {
+    color: $colorWhite;
+    @include mq(o-sp) {
+    }
+  }
+  &__picture {
+    background-image: url('#{$bgPath}deployment_01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    @include mq(u-sp) {
+      width: 44vw;
+      height: 28vw;
+    }
+    @include mq(o-sp) {
+      width: 45vw;
+      height: 20vw;
+    }
+  }
+  &__pictureMore {
+    background-image: url('#{$bgPath}deployment_02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    @include mq(u-sp) {
+      width: 44vw;
+      height: 28vw;
+    }
+    @include mq(o-sp) {
+      width: 45vw;
+      height: 20vw;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    text-align: center;
+    @include mq(u-sp) {
+      font-size: 20px;
+      position: relative;
+      top: -76px;
+      white-space: wrap;
+    }
+    @include mq(o-sp) {
+      font-size: 36px;
+      position: relative;
+      top: -150px;
+      white-space: nowrap;
+    }
+  }
+  &__text {
+    text-align: center;
+    @include mq(u-sp) {
+      font-size: 13px;
+      position: relative;
+      top: -76px;
+      white-space: wrap;
+    }
+    @include mq(o-sp) {
+      font-size: 16px;
+      position: relative;
+      top: -150px;
+      white-space: nowrap;
+    }
+  }
+  &__dog {
+    &::before {
+      @include mq(o-sp) {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}doog_01.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 120px;
+        height: 80px;
+        position: relative;
+        top: 6px;
+        left: 80vw;
+      }
+    }
+  }
+}

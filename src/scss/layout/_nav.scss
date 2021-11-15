@@ -1,0 +1,48 @@
+.l-nav {
+  @include mq(u-sp) {
+    display: none;
+  }
+  @include mq(o-sp) {
+    background-color: $colorBrown;
+  }
+  &__wrap {
+    @include mq(o-sp) {
+      height: 60px;
+    }
+  }
+  &__container {
+    @include mq(o-sp) {
+      margin: 0 80px;
+    }
+  }
+  &__list {
+    @include mq(o-sp) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__item {
+    @include mq(o-sp) {
+      margin-top: 4px;
+      display: block;
+      font-size: 16px;
+      color: #f4eadd;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  &__link {
+    @include mq(o-sp) {
+      display: inline-block;
+      text-align: center;
+      margin-top: 22px;
+      line-height: 0.8;
+    }
+    &:hover {
+      @include mq(o-sp) {
+        border-bottom: 1px solid #f4eadd;
+      }
+    }
+  }
+}

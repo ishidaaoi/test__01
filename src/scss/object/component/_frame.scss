@@ -1,0 +1,17 @@
+.c-frame {
+  margin: 0 auto;
+  @include mq(u-sp) {
+    max-width: 768px;
+  }
+  @include mq(o-sp) {
+    max-width: 1200px;
+  }
+  &__wrap {
+    @include mq(u-sp) {
+      margin: 0 10px;
+    }
+    @include mq(o-sp) {
+      margin: 0 40px;
+    }
+  }
+}
