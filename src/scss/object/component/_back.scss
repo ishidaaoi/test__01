@@ -4,22 +4,16 @@
     background-image: url('#{$bgPath}back_01.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     z-index: 99;
-    // border-bottom: 1px solid #6ea5af;
-    // &__::before {
-    //   box-shadow: 0 1px 0 0 black;
-    //   z-index: 100;
-    // }
     @include mq(u-sp) {
+      width: 100%;
       min-height: 6.2vh;
     }
     @include mq(o-sp) {
+      width: 100%;
       min-height: 32vh;
     }
   }
-  // &__firBorder {
-  // }
   &__sec {
     background-image: url('#{$bgPath}back_02.png');
     background-repeat: no-repeat;
@@ -27,9 +21,11 @@
     width: 100%;
     z-index: 99;
     @include mq(u-sp) {
+      width: 100%;
       min-height: 6.2vh;
     }
     @include mq(o-sp) {
+      width: 100%;
       min-height: 32vh;
     }
   }
@@ -40,9 +36,11 @@
     width: 100%;
     z-index: 99;
     @include mq(u-sp) {
+      width: 100%;
       min-height: 6.2vh;
     }
     @include mq(o-sp) {
+      width: 100%;
       min-height: 32vh;
     }
   }
