@@ -5,9 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 99;
+    margin-top: -1px;
     @include mq(u-sp) {
       width: 100%;
-      min-height: 6.2vh;
+      min-height: 10.2vh;
     }
     @include mq(o-sp) {
       width: 100%;
@@ -20,9 +21,10 @@
     background-size: cover;
     width: 100%;
     z-index: 99;
+    margin-top: -1px;
     @include mq(u-sp) {
       width: 100%;
-      min-height: 6.2vh;
+      min-height: 10.2vh;
     }
     @include mq(o-sp) {
       width: 100%;
@@ -35,9 +37,10 @@
     background-size: cover;
     width: 100%;
     z-index: 99;
+    margin-top: -1px;
     @include mq(u-sp) {
       width: 100%;
-      min-height: 6.2vh;
+      min-height: 10.2vh;
     }
     @include mq(o-sp) {
       width: 100%;

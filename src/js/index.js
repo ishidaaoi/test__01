@@ -32,6 +32,18 @@ $(() => {
 });
 
 $(() => {
+  $(".js-bottom-slide").slick({
+    dots: true,
+    arrow: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    cssEase:"linear",
+  });
+});
+
+$(() => {
     const headerHight = 20; //ヘッダーの高さをpx指定
         const urlHash = location.hash;
         if(urlHash) {
@@ -53,17 +65,6 @@ $(() => {
 });
 
 $(() => {
-// const navPos = jQuery( '#global-nav' ).offset().top; // グローバルメニューの位置
-// const navHeight = jQuery( '#global-nav' ).outerHeight(); // グローバルメニューの高さ
-// jQuery( window ).on( 'scroll', function() {
-// 	if ( jQuery( this ).scrollTop() > navPos ) {
-// 		jQuery( 'body' ).css( 'padding-top', navHeight );
-// 		jQuery( '#global-nav' ).addClass( 'm_fixed' );
-// 	} else {
-// 		jQuery( 'body' ).css( 'padding-top', 0 );
-// 		jQuery( '#global-nav' ).removeClass( 'm_fixed' );
-// 	}
-// });
   $(window).on('scroll', function() {
 	if (600 < $(this).scrollTop() ) { // 1000px以上スクロールしたら
 		$('.js-inHeader').addClass('is-active');
@@ -72,6 +73,17 @@ $(() => {
 	}
 });
 });
+
+// $(() => {
+//   $(window).on('scroll', function() {
+// 	if (600 < $(this).scrollTop() ) { // 1000px以上スクロールしたら
+// 		$('.js-return').addClass('is-active');
+// 	} else {
+// 		$('.js-return').removeClass('is-active');
+// 	}
+// });
+// });
+
 
 $(() => {
   const $spNavButton = $(".js-humburger");
@@ -82,3 +94,17 @@ $(() => {
       $spNav.toggleClass("is-open");
   })
 });
+
+// $(() => {
+// // $(function() {
+//     const topBtn = $(".js-return");
+//     // topBtn.hide();
+//     //スクロールが100に達したらボタン表示
+//     $(window).on('scroll', function() {
+//         if ($(this).scrollTop() > 100) {
+//             topBtn.fadeIn();
+//         } else {
+//             topBtn.fadeOut();
+//         }
+//     });
+// });

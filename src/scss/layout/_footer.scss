@@ -7,6 +7,7 @@
   @include mq(o-sp) {
     padding-bottom: 40px;
   }
+
   &__wrap {
     @include mq(o-sp) {
       max-width: 1280px;

@@ -31,16 +31,23 @@
   }
   .slick-prev.slick-arrow {
     &::before {
-      @include mq(o-sp) {
-        content: '';
-        display: block;
-        background-image: url('#{$bgPath}arrow_left.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-      }
+      content: '';
+      display: block;
+      background-image: url('#{$bgPath}arrow_left.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-align: center;
+      width: 28px;
+      height: 28px;
+      opacity: 1;
+      // @include mq(u-sp) {
+      //   width: 30px;
+      //   height: 30px;
+      // }
+      // @include mq(o-sp) {
+      //   width: 30px;
+      //   height: 30px;
+      // }
     }
     &:hover {
       @include mq(o-sp) {
@@ -51,15 +58,16 @@
   }
   .slick-next.slick-arrow {
     &::before {
+      content: '';
+      display: block;
+      background-image: url('#{$bgPath}arrow_right.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 28px;
+      height: 28px;
+      opacity: 1;
+      text-align: center;
       @include mq(o-sp) {
-        content: '';
-        display: block;
-        background-image: url('#{$bgPath}arrow_right.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 30px;
-        height: 30px;
-        text-align: center;
       }
     }
     &:hover {
@@ -70,19 +78,43 @@
     }
   }
   .slick-prev {
+    position: absolute !important;
+    z-index: 1;
+    @include mq(u-sp) {
+      top: 101% !important;
+      left: 29% !important;
+    }
     @include mq(o-sp) {
-      top: 444px;
-      left: 480px;
-      z-index: 1;
+      top: 102% !important;
+      left: 40% !important;
     }
   }
   .slick-next {
+    z-index: 1;
+    position: absolute !important;
+    @include mq(u-sp) {
+      top: 101% !important;
+      left: 64% !important;
+    }
     @include mq(o-sp) {
-      top: 444px;
-      right: 484px;
-      z-index: 1;
+      top: 102% !important;
+      right: 41% !important;
     }
   }
+  // .slick-prev {
+  //   @include mq(o-sp) {
+  //     top: 444px;
+  //     left: 480px;
+  //     z-index: 1;
+  //   }
+  // }
+  // .slick-next {
+  //   @include mq(o-sp) {
+  //     top: 444px;
+  //     right: 484px;
+  //     z-index: 1;
+  //   }
+  // }
   .slick-dots {
     @include mq(o-sp) {
       opacity: 1;
@@ -91,21 +123,21 @@
   }
 
   .slick-dots li.slick-active button:before {
-    @include mq(o-sp) {
-      content: '●';
-      opacity: 1;
-      color: #fff;
-    }
+    // @include mq(o-sp) {
+    content: '●';
+    opacity: 1;
+    color: #fff;
+    // }
   }
 
   .slick-dots li button:before {
-    @include mq(o-sp) {
-      content: '◯';
-      font-weight: bold;
-      text-align: center;
-      opacity: 1;
-      color: #fff;
-      -webkit-text-stroke: 1px #fff;
-    }
+    // @include mq(o-sp) {
+    content: '◯';
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+    // }
   }
 }

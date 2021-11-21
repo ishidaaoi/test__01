@@ -1,0 +1,21 @@
+.p-return {
+  // display: none;
+  &.is-active {
+    transform: translateY(0%);
+  }
+  &__inner {
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('#{$bgPath}return.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      position: fixed;
+      bottom: 20px;
+      right: 22px;
+      z-index: 999;
+    }
+  }
+}

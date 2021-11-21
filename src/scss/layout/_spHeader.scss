@@ -1,8 +1,10 @@
 .l-spHeader {
-  // height: 60px;
-  // position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  // z-index: 100;
+  z-index: 100;
 
   &__top {
     background-color: #004099;
@@ -13,7 +15,6 @@
   &__humburger {
     width: 30px;
     height: 50px;
-    // background-color: brown;
     position: relative;
     margin-left: 20px;
   }
@@ -27,6 +28,13 @@
     border-radius: 5px;
     background-color: #fff;
     transition: all 0.5s;
+    &:last-of-type::before {
+      content: 'MENU';
+      display: block;
+      color: $colorWhite;
+      font-size: 8px;
+      margin-top: 4px;
+    }
   }
   &__humburger span:nth-of-type(1) {
     top: 34%;
@@ -48,14 +56,15 @@
   }
   &__logo {
     display: flex;
-    margin-left: 28vw;
-    width: 70px;
+    margin-left: 30vw;
+    margin-left: 22vw;
+    height: 50px;
+    margin-top: 8px;
   }
+
   &__menu {
-    min-height: 108vh;
+    height: 0;
     width: 90vw;
-    // z-index: 999;
-    // background-color: cadetblue;
     transform: translateX(-100%); //js
     transition: 0.3s; //js
 
@@ -72,24 +81,19 @@
   &__containerWrap {
     display: inline-block;
     width: 45vw;
-    // margin: 0 auto;
     text-align: center;
     border: 1px solid #dcc3a0;
     padding: 10px 0;
   }
-  // &__online {
-  //   display: inline-block;
-  //   width: 164px;
-  //      margin: 0 auto;
-  // }
   &__icon {
-    background-image: url('#{$bgPath}newitem_03.svg');
+    background-image: url('#{$bgPath}humburger_01.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 10vw;
     height: 10vw;
+    margin: 0 auto;
     &--More {
-      background-image: url('#{$bgPath}newitem_03.svg');
+      background-image: url('#{$bgPath}humburger_02.svg');
     }
   }
   &__heading {
@@ -136,10 +140,6 @@
       margin-left: 10px;
     }
   }
-  &__ {
-  }
-  &__ {
-  }
   &__sign {
     position: relative;
     &::before {
@@ -170,13 +170,8 @@
     font-size: 2.92vw;
     margin-left: 10px;
   }
-  &__ {
-  }
+
   &__picture {
     margin-left: 10px;
-  }
-  &__ {
-  }
-  &__ {
   }
 }

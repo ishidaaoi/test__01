@@ -1,5 +1,6 @@
 .p-public {
   background-color: #919b51;
+  margin-top: -1px;
   color: $colorBrown;
   @include mq(o-sp) {
     padding-top: 100px;
@@ -15,7 +16,7 @@
     margin: 0 30px;
     align-items: center;
     @include mq(u-sp) {
-      width: 80vw;
+      // width: 80vw;
     }
     @include mq(o-sp) {
       width: 44.4vw;

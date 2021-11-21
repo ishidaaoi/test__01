@@ -1,14 +1,30 @@
 .p-newItems {
   background-color: #6ea5af;
+  margin-top: -1px;
+  &__wrap {
+    @include mq(u-sp) {
+      // margin: 0 10px;
+    }
+  }
   &__container {
     position: relative;
+    @include mq(o-sp) {
+      // margin: 0 40px;
+    }
     &::before {
+      content: '';
+      display: block;
+      background-image: url('#{$bgPath}newitem_03.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include mq(u-sp) {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 30%;
+        left: 60%;
+      }
       @include mq(o-sp) {
-        content: '';
-        display: block;
-        background-image: url('#{$bgPath}newitem_03.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
         width: 150px;
         height: 100px;
         position: absolute;
@@ -23,12 +39,19 @@
       justify-content: space-between;
     }
     &::before {
+      content: '';
+      display: block;
+      background-image: url('#{$bgPath}newitem_01.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include mq(u-sp) {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: -18%;
+        left: -10%;
+      }
       @include mq(o-sp) {
-        content: '';
-        display: block;
-        background-image: url('#{$bgPath}newitem_01.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
         width: 150px;
         height: 150px;
         position: absolute;
@@ -47,37 +70,47 @@
     border-radius: 70px;
     overflow: hidden;
     @include mq(u-sp) {
-      width: 240px;
-      height: 240px;
+      width: 62vw;
+      margin-left: 130px;
     }
     @include mq(o-sp) {
       width: 300px;
       height: 300px;
     }
-    &::before {
-      @include mq(o-sp) {
-        content: '';
-        display: block;
-        background-image: url('#{$bgPath}fukidashi_01.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 40px;
-        height: 50px;
-        position: absolute;
-        top: 276px;
-        left: -8px;
-        z-index: 3;
-        transform: scale(1, -1);
-      }
-    }
+    // &::before {
+    //   content: '';
+    //   display: block;
+    //   background-image: url('#{$bgPath}fukidashi_01.svg');
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   z-index: 3;
+    //   transform: scale(1, -1);
+    //   @include mq(u-sp) {
+    //     width: 40px;
+    //     height: 50px;
+    //     position: absolute;
+    //     top: 44%;
+    //     left: 20%;
+    //   }
+    //   @include mq(o-sp) {
+    //     width: 40px;
+    //     height: 50px;
+    //     position: absolute;
+    //     top: 276px;
+    //     left: -8px;
+    //   }
+    // }
     &--sec {
       display: inline-block;
       border-radius: 70px;
       overflow: hidden;
       position: relative;
       @include mq(u-sp) {
-        width: 240px;
-        height: 240px;
+        width: 62vw;
+        // height: 260px;
+        margin-left: 20px;
+        // position: relative;
+        // left: 4%;
       }
       @include mq(o-sp) {
         width: 300px;
@@ -90,85 +123,161 @@
       border-radius: 70px;
       overflow: hidden;
       @include mq(u-sp) {
-        width: 300px;
-        height: 300px;
+        width: 76vw;
+        margin-top: 10px;
+        margin-left: 70px;
+        // position: relative;
+        // left: 20%;
       }
       @include mq(o-sp) {
         width: 410px;
         height: 410px;
       }
-      &::before {
-        @include mq(o-sp) {
-          content: '';
-          display: block;
-          background-image: url('#{$bgPath}fukidashi_01.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-          width: 40px;
-          height: 50px;
-          position: absolute;
-          top: 386px;
-          left: -8px;
-          transform: scale(1, -1);
-        }
-      }
+      // &::before {
+      //   content: '';
+      //   display: block;
+      //   background-image: url('#{$bgPath}fukidashi_01.svg');
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      //   transform: scale(1, -1);
+      //   @include mq(u-sp) {
+      //     width: 40px;
+      //     height: 50px;
+      //     position: absolute;
+      //     top: 54%;
+      //     left: 6%;
+      //   }
+      //   @include mq(o-sp) {
+      //     width: 40px;
+      //     height: 50px;
+      //     position: absolute;
+      //     top: 386px;
+      //     left: -8px;
+      //   }
+      // }
     }
   }
   &__introduction {
     background-color: #f4eadd;
     border-radius: 5px;
-    padding: 15px 20px;
     margin-top: 20px;
     position: relative;
     right: 20px;
     @include mq(u-sp) {
-      width: 270px;
+      width: 66vw;
+      padding: 15px;
+      position: relative;
+      top: -50px;
+      left: 4%;
     }
     @include mq(o-sp) {
       width: 320px;
       height: 90px;
+      padding: 15px 20px;
     }
     &::before {
-      @include mq(o-sp) {
-        content: '';
-        display: block;
-        background-image: url('#{$bgPath}newitem_04.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100px;
-        height: 100px;
+      content: '';
+      display: block;
+      background-image: url('#{$bgPath}fukidashi_01.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 3;
+      transform: scale(1, -1);
+      @include mq(u-sp) {
+        width: 40px;
+        height: 50px;
         position: absolute;
-        top: 390px;
-        left: 60px;
+        top: -52%;
+        left: 20%;
+      }
+      @include mq(o-sp) {
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        top: -46px;
+        left: 16px;
       }
     }
+    // &::before {
+    //   content: '';
+    //   display: block;
+    //   background-image: url('#{$bgPath}newitem_04.svg');
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   @include mq(u-sp) {
+    //     width: 16vw;
+    //     height: 16vw;
+    //     position: absolute;
+    //     top: 256%;
+    //     left: 106%;
+    //   }
+    //   @include mq(o-sp) {
+    //     width: 100px;
+    //     height: 100px;
+    //     position: absolute;
+    //     top: 390px;
+    //     left: 60px;
+    //   }
+    // }
     &--big {
       background-color: #f4eadd;
       border-radius: 5px;
-      padding: 15px 20px;
       margin-top: 20px;
       position: relative;
       right: 20px;
       @include mq(u-sp) {
-        width: 270px;
+        width: 66vw;
+        position: relative;
+        top: -40px;
+        left: 4%;
+        padding: 15px;
       }
       @include mq(o-sp) {
         width: 410px;
+        padding: 15px 20px;
       }
       &::before {
-        @include mq(o-sp) {
-          content: '';
-          display: block;
-          background-image: url('#{$bgPath}newitem_02.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-          width: 90px;
-          height: 150px;
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}fukidashi_01.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(1, -1);
+        @include mq(u-sp) {
+          width: 40px;
+          height: 50px;
           position: absolute;
-          top: -500px;
-          left: 1110px;
+          top: -52%;
+          left: 6%;
+        }
+        @include mq(o-sp) {
+          width: 40px;
+          height: 50px;
+          position: absolute;
+          top: -46px;
+          left: 16px;
         }
       }
+      // &::before {
+      //   content: '';
+      //   display: block;
+      //   background-image: url('#{$bgPath}newitem_02.svg');
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      //   @include mq(u-sp) {
+      //     width: 90px;
+      //     height: 150px;
+      //     position: absolute;
+      //     bottom: -500%;
+      //   }
+      //   @include mq(o-sp) {
+      //     width: 90px;
+      //     height: 150px;
+      //     position: absolute;
+      //     top: -500px;
+      //     left: 1110px;
+      //   }
+      // }
     }
     &--sec {
       background-color: #f4eadd;
@@ -178,22 +287,37 @@
       top: -220px;
       right: 20px;
       @include mq(u-sp) {
-        width: 270px;
+        width: 66vw;
+        padding: 15px;
+        position: relative;
+        top: -30px;
+        left: 30%;
       }
       @include mq(o-sp) {
         width: 320px;
+        padding: 15px 20px;
       }
       &::before {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}fukidashi_01.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        // transform: scale(1, 1);
+        @include mq(u-sp) {
+          width: 40px;
+          height: 50px;
+          position: absolute;
+          top: -50%;
+          left: 58%;
+          transform: scale(-1, -1);
+        }
         @include mq(o-sp) {
-          content: '';
-          display: block;
-          background-image: url('#{$bgPath}fukidashi_01.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
           width: 40px;
           height: 50px;
           position: absolute;
           top: 92px;
+          transform: scale(1, 1);
         }
       }
     }

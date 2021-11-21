@@ -1,4 +1,6 @@
 .l-inHeader {
+  color: #fff;
+  background-color: #004099;
   @include mq(o-sp) {
     position: fixed;
     top: 0%;
@@ -17,8 +19,7 @@
 
   &__wrap {
     @include mq(o-sp) {
-      color: #fff;
-      background-color: #004099;
+      margin: 0 10vw;
     }
   }
   &__container {
@@ -26,12 +27,12 @@
       display: flex;
       align-items: center;
       height: 80px;
-      margin: 0 100px;
+      // margin: 0 10vw;
     }
   }
   &__logo {
     @include mq(o-sp) {
-      width: 100px;
+      width: 130px;
       height: 50px;
     }
   }

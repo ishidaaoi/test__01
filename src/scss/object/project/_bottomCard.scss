@@ -1,0 +1,90 @@
+.p-bottomCard {
+  display: block;
+  background-color: black;
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__link {
+    background-image: url('#{$bgPath}indicate_04.png');
+    // background-image: url('#{$bgPath}indicate_05.png');
+    // background-image: url('#{$bgPath}indicate_06.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130%;
+    height: 260px;
+    position: relative;
+    z-index: 2;
+  }
+  &__inner {
+    font-weight: bold;
+    color: #fff;
+    -webkit-text-stroke: 1px $colorWhite;
+    position: relative;
+    height: 220px;
+    text-align: center;
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('#{$bgPath}indicate_fukidashi.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 120px;
+      height: 100px;
+      position: absolute;
+      top: -14%;
+      left: 70%;
+    }
+    &--middle {
+      &::before {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}indicate_coffe.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 110px;
+        height: 90px;
+        position: absolute;
+        top: 0%;
+        left: 8%;
+      }
+    }
+    &--small {
+      &::before {
+        content: '';
+        display: block;
+        background-image: url('#{$bgPath}indicate_wain.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 90px;
+        position: absolute;
+        top: 8%;
+        left: 82%;
+      }
+    }
+  }
+  &__container {
+    margin-top: 40px;
+    &--middle {
+      margin-top: 70px;
+    }
+    &--small {
+      margin-top: 70px;
+    }
+  }
+  &__ {
+  }
+  &__title {
+    font-size: 26px;
+  }
+  &__text {
+    font-size: 22px;
+  }
+  &__ {
+  }
+  &__ {
+  }
+}

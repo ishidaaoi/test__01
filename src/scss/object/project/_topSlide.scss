@@ -17,7 +17,7 @@
   }
   &__item {
     display: block;
-    background-image: url('#{$bgPath}top_01.jpeg');
+    background-image: url('#{$bgPath}top_01.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     @include mq(u-sp) {
@@ -28,7 +28,7 @@
     }
     &--next {
       display: block;
-      background-image: url('#{$bgPath}top_02.jpeg');
+      background-image: url('#{$bgPath}top_02.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       @include mq(u-sp) {
@@ -49,7 +49,7 @@
   .slick-prev.slick-arrow {
     margin: 0;
     padding: 0;
-    line-height: 0;
+    line-height: 0 !important;
     @include mq(o-sp) {
     }
     &::before {
@@ -98,6 +98,8 @@
     position: absolute !important;
     z-index: 1;
     @include mq(u-sp) {
+      top: 86% !important;
+      left: 32% !important;
     }
     @include mq(o-sp) {
       top: 90% !important;
@@ -108,10 +110,12 @@
     z-index: 1;
     position: absolute !important;
     @include mq(u-sp) {
+      top: 88% !important;
+      left: 60% !important;
     }
     @include mq(o-sp) {
-      top: 90% !important;
-      right: 40% !important;
+      top: 92% !important;
+      right: 41% !important;
     }
   }
   .slick-dots {
