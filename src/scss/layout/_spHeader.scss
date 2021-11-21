@@ -55,11 +55,16 @@
     transform: translateY(-12px) rotate(45deg);
   }
   &__logo {
+    // display: flex;
+    // // margin-left: 30vw;
+    // // margin-left: 22vw;
+    // height: 50px;
+    // // margin-top: 8px;
+    // margin: 8px 220px;
+
     display: flex;
-    margin-left: 30vw;
-    margin-left: 22vw;
     height: 50px;
-    margin-top: 8px;
+    margin: 2vw 22vw;
   }
 
   &__menu {

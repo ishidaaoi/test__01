@@ -3,7 +3,7 @@
   margin-top: -1px;
   color: $colorBrown;
   @include mq(o-sp) {
-    padding-top: 100px;
+    padding-top: 40px;
   }
   &__wrap {
     @include mq(o-sp) {

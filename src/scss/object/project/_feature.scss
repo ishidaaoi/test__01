@@ -10,7 +10,6 @@
   &__wrap {
     @include mq(u-sp) {
       margin: 0 20px;
-      padding-bottom: 20px;
     }
     @include mq(o-sp) {
       padding-bottom: 40px;
