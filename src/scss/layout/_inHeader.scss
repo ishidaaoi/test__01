@@ -74,6 +74,11 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
+      &:hover {
+        background-color: #000080;
+        color: $colorWhite;
+        transition: 1s;
+      }
     }
   }
   &__link {
@@ -117,6 +122,9 @@
   &__index {
     @include mq(o-sp) {
       white-space: nowrap;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .is-fixed {

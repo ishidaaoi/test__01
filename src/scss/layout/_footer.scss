@@ -11,6 +11,7 @@
   &__wrap {
     @include mq(o-sp) {
       max-width: 1280px;
+      position: relative;
     }
   }
   &__container {
@@ -199,6 +200,14 @@
         text-decoration: underline;
       }
     }
+  }
+  &__otherspicture {
+    background-image: url('#{$bgPath}square_02.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
   }
   &__information {
     @include mq(o-sp) {

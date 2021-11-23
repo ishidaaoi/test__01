@@ -1,8 +1,17 @@
 .p-return {
-  // display: none;
-  &.is-active {
-    transform: translateY(0%);
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+
+  &.absolute {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    bottom: auto;
   }
+
   &__inner {
     &::before {
       content: '';
@@ -12,10 +21,6 @@
       background-repeat: no-repeat;
       width: 60px;
       height: 60px;
-      position: fixed;
-      bottom: 20px;
-      right: 22px;
-      z-index: 999;
     }
   }
 }

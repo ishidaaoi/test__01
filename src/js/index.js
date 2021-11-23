@@ -77,13 +77,12 @@ $(() => {
 // $(() => {
 //   $(window).on('scroll', function() {
 // 	if (600 < $(this).scrollTop() ) { // 1000px以上スクロールしたら
-// 		$('.js-return').addClass('is-active');
+// 		$('.js-return').fadeIn(1500);
 // 	} else {
-// 		$('.js-return').removeClass('is-active');
+// 		$('.js-return').fadeOut(1500);
 // 	}
 // });
 // });
-
 
 $(() => {
   const $spNavButton = $(".js-humburger");
@@ -95,16 +94,28 @@ $(() => {
   })
 });
 
-// $(() => {
-// // $(function() {
-//     const topBtn = $(".js-return");
-//     // topBtn.hide();
-//     //スクロールが100に達したらボタン表示
-//     $(window).on('scroll', function() {
-//         if ($(this).scrollTop() > 100) {
-//             topBtn.fadeIn();
-//         } else {
-//             topBtn.fadeOut();
-//         }
-//     });
-// });
+$(() => {
+// $(function() {
+    const topBtn = $(".js-return");
+    // topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 600) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+}
+    });
+
+$(window).on('scroll', () => {
+    const height = $(document).height(), //ドキュメントの高さ
+        position = window.innerHeight + $(window).scrollTop(), //ページトップから現在地までの高さ
+        footer = $(".js-footer").height(); //フッターの高さ
+      // console.log(height);
+    if ( height - position  < footer ){
+      topBtn.addClass("absolute");
+    } else {
+      topBtn.removeClass("absolute");
+    }
+    });
+});

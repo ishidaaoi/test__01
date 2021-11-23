@@ -11,12 +11,14 @@
     width: 100%;
     height: 60px;
     display: flex;
+    position: relative;
   }
   &__humburger {
     width: 30px;
     height: 50px;
     position: relative;
     margin-left: 20px;
+    margin-top: -2px;
   }
   &__humburger span {
     display: inline-block;
@@ -55,16 +57,13 @@
     transform: translateY(-12px) rotate(45deg);
   }
   &__logo {
-    // display: flex;
-    // // margin-left: 30vw;
-    // // margin-left: 22vw;
-    // height: 50px;
-    // // margin-top: 8px;
-    // margin: 8px 220px;
-
-    display: flex;
-    height: 50px;
-    margin: 2vw 22vw;
+    width: 120px;
+    // margin-right: 42vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
   }
 
   &__menu {
@@ -78,7 +77,10 @@
       transform: translateX(0%); //js
     } //js
   }
-
+  &__wrap {
+    height: 86vh;
+    overflow: scroll;
+  }
   &__container {
     display: flex;
     background-color: #f9f3eb;
@@ -113,20 +115,36 @@
     line-height: 1;
   }
   &__list {
+    // overflow: auto;
+    // -webkit-overflow-scrolling: touch;
     background-color: $colorWhite;
   }
   &__item {
     border-bottom: 1px solid #dcc3a0;
     border-right: 1px solid #dcc3a0;
+    &--service {
+      border-bottom: none;
+    }
     &--cafe {
       border-bottom: 10px solid #dcc3a0;
     }
+    &--question {
+      border-bottom: none;
+    }
+    // &--question {
+    //   border: 1px solid $colorBrown;
+    //   border-radius: 5px;
+    // }
   }
   &__sell {
     display: flex;
     justify-content: space-between;
     margin: 0 14px;
     padding: 10px 0;
+    &--question {
+      border: 2px solid #dcc3a0;
+      border-radius: 5px;
+    }
   }
   &__index {
     line-height: 1.5 !important;
@@ -167,16 +185,22 @@
   }
   &__inner {
     display: flex;
-    margin-bottom: 8vw;
-    padding: 0 4vw;
+    // margin-bottom: 8vw;
+    padding: 0 20px 20px;
     align-items: center !important;
   }
   &__info {
     font-size: 2.92vw;
     margin-left: 10px;
+    color: $colorBrown;
   }
 
   &__picture {
     margin-left: 10px;
+    background-image: url('#{$bgPath}square_03.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
   }
 }

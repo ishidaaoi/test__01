@@ -13,7 +13,7 @@
     }
     @include mq(o-sp) {
       padding-bottom: 40px;
-      margin: 0 40px;
+      // margin: 0 40px;
     }
   }
   &__container {
@@ -45,8 +45,8 @@
       width: 90vw;
     }
     @include mq(o-sp) {
-      width: 48vw;
-      max-width: 580px;
+      width: 50vw;
+      max-width: 630px;
     }
     &:hover {
       @include mq(o-sp) {
@@ -69,7 +69,7 @@
       margin-top: 40px;
     }
     @include mq(o-sp) {
-      width: 18vw;
+      width: 20vw;
       margin-left: 40px;
       margin-bottom: 40px;
       max-width: 230px;
@@ -83,8 +83,8 @@
       width: 90vw;
     }
     @include mq(o-sp) {
-      width: 18vw;
-      max-width: 230px;
+      width: 19vw;
+      max-width: 240px;
     }
     &:hover {
       @include mq(o-sp) {

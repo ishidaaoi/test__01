@@ -3,6 +3,9 @@
     display: none;
   }
   background-color: $colorBrown;
+  &__wrap {
+    position: relative;
+  }
   &__list {
   }
   &__item {
@@ -34,8 +37,7 @@
       margin-left: 10px;
     }
   }
-  &__ {
-  }
+
   &__ {
   }
   &__sign {
@@ -111,6 +113,14 @@
   &__ps {
     margin-top: 20px;
     font-size: 8px;
+  }
+  &__picture {
+    background-image: url('#{$bgPath}square_02.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
   }
   // &__sign {
   //   position: relative;

@@ -19,8 +19,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include mq(u-sp) {
-      width: 68vw;
-      height: 68vw;
+      width: 70vw;
+      height: 70vw;
     }
     @include mq(o-sp) {
       width: 32vw;
@@ -33,7 +33,7 @@
     color: $colorBrown;
     @include mq(u-sp) {
       border-radius: 0 0 10px 0;
-      width: 68vw;
+      width: 70vw;
       height: 500px;
     }
     @include mq(o-sp) {
