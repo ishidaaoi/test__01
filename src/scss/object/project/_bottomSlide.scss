@@ -6,6 +6,8 @@
     height: 480px;
   }
   .slick-prev.slick-arrow {
+    width: auto;
+    height: auto;
     &::before {
       content: '';
       display: block;
@@ -19,6 +21,8 @@
     }
   }
   .slick-next.slick-arrow {
+    width: auto;
+    height: auto;
     &::before {
       content: '';
       display: block;

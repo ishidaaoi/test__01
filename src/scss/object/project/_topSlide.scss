@@ -48,6 +48,8 @@
     margin: 0;
     padding: 0;
     line-height: 0 !important;
+    width: auto;
+    height: auto;
     @include mq(o-sp) {
     }
     &::before {
@@ -73,6 +75,8 @@
     }
   }
   .slick-next.slick-arrow {
+    width: auto;
+    height: auto;
     &::before {
       content: '';
       display: block;
