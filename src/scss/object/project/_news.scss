@@ -59,13 +59,8 @@
       margin-top: 10px;
     }
     @include mq(o-sp) {
-      // position: absolute;
-      // top: 10%;
-      // left: 10%;
       margin-left: 40vw;
       margin-top: 10px;
     }
-  }
-  &__line {
   }
 }

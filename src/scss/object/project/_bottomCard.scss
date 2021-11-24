@@ -1,16 +1,9 @@
 .p-bottomCard {
   display: block;
   background-color: black;
-  &__ {
-  }
-  &__ {
-  }
-  &__ {
-  }
+
   &__link {
     background-image: url('#{$bgPath}indicate_04.png');
-    // background-image: url('#{$bgPath}indicate_05.png');
-    // background-image: url('#{$bgPath}indicate_06.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 130%;
@@ -75,16 +68,10 @@
       margin-top: 70px;
     }
   }
-  &__ {
-  }
   &__title {
     font-size: 26px;
   }
   &__text {
     font-size: 22px;
-  }
-  &__ {
-  }
-  &__ {
   }
 }

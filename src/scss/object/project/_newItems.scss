@@ -1,16 +1,8 @@
 .p-newItems {
   background-color: #6ea5af;
   margin-top: -1px;
-  &__wrap {
-    @include mq(u-sp) {
-      // margin: 0 10px;
-    }
-  }
   &__container {
     position: relative;
-    @include mq(o-sp) {
-      // margin: 0 40px;
-    }
     &::before {
       content: '';
       display: block;
@@ -77,29 +69,6 @@
       width: 300px;
       height: 300px;
     }
-    // &::before {
-    //   content: '';
-    //   display: block;
-    //   background-image: url('#{$bgPath}fukidashi_01.svg');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   z-index: 3;
-    //   transform: scale(1, -1);
-    //   @include mq(u-sp) {
-    //     width: 40px;
-    //     height: 50px;
-    //     position: absolute;
-    //     top: 44%;
-    //     left: 20%;
-    //   }
-    //   @include mq(o-sp) {
-    //     width: 40px;
-    //     height: 50px;
-    //     position: absolute;
-    //     top: 276px;
-    //     left: -8px;
-    //   }
-    // }
     &--sec {
       display: inline-block;
       border-radius: 70px;
@@ -107,10 +76,7 @@
       position: relative;
       @include mq(u-sp) {
         width: 62vw;
-        // height: 260px;
         margin-left: 20px;
-        // position: relative;
-        // left: 4%;
       }
       @include mq(o-sp) {
         width: 300px;
@@ -126,35 +92,11 @@
         width: 76vw;
         margin-top: 10px;
         margin-left: 70px;
-        // position: relative;
-        // left: 20%;
       }
       @include mq(o-sp) {
         width: 410px;
         height: 410px;
       }
-      // &::before {
-      //   content: '';
-      //   display: block;
-      //   background-image: url('#{$bgPath}fukidashi_01.svg');
-      //   background-repeat: no-repeat;
-      //   background-size: contain;
-      //   transform: scale(1, -1);
-      //   @include mq(u-sp) {
-      //     width: 40px;
-      //     height: 50px;
-      //     position: absolute;
-      //     top: 54%;
-      //     left: 6%;
-      //   }
-      //   @include mq(o-sp) {
-      //     width: 40px;
-      //     height: 50px;
-      //     position: absolute;
-      //     top: 386px;
-      //     left: -8px;
-      //   }
-      // }
     }
   }
   &__introduction {
@@ -303,7 +245,6 @@
         background-image: url('#{$bgPath}fukidashi_01.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        // transform: scale(1, 1);
         @include mq(u-sp) {
           width: 48px;
           height: 58px;

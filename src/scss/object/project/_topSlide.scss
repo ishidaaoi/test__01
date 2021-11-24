@@ -6,8 +6,6 @@
     @include mq(o-sp) {
     }
   }
-  .slick-track {
-  }
   &__list {
     margin: 0;
     padding: 0;
@@ -57,7 +55,7 @@
       display: block;
       background-image: url('#{$bgPath}arrow_left.svg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       position: absolute;
       opacity: 1;
       width: 28px;
@@ -80,7 +78,7 @@
       display: block;
       background-image: url('#{$bgPath}arrow_right.svg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       width: 28px;
       height: 28px;
       opacity: 1;

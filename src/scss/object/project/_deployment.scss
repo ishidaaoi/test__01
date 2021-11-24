@@ -11,8 +11,6 @@
       padding-top: 40px;
     }
     @include mq(o-sp) {
-      // flex-wrap: wrap;
-      // margin: 0 40px;
     }
   }
   &__container {
@@ -29,12 +27,6 @@
   }
   &__inner {
     color: $colorWhite;
-    @include mq(u-sp) {
-      //   position: relative;
-    }
-    @include mq(o-sp) {
-      // position: relative;
-    }
   }
   &__picture {
     &--fir {
@@ -80,33 +72,18 @@
     text-align: center;
     @include mq(u-sp) {
       font-size: 20px;
-      // position: absolute;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
-      // white-space: wrap;
     }
     @include mq(o-sp) {
       font-size: 36px;
-      // position: relative;
-      // top: -150px;
-      // white-space: wrap;
     }
   }
   &__text {
     text-align: center;
     @include mq(u-sp) {
       font-size: 13px;
-      // position: absolute;
-      // top: 66%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
     }
     @include mq(o-sp) {
       font-size: 16px;
-      // position: relative;
-      // top: -150px;
-      // white-space: nowrap;
     }
   }
   &__dog {
