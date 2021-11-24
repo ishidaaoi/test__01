@@ -16,7 +16,7 @@
   &__container {
     position: relative;
     @include mq(u-sp) {
-      margin-left: 12px;
+      margin: 0 12px;
     }
     &:hover {
       @include mq(o-sp) {

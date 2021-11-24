@@ -76,7 +76,7 @@
     position: absolute !important;
     z-index: 1;
     @include mq(u-sp) {
-      top: 101% !important;
+      top: 102% !important;
       left: 29% !important;
     }
     @include mq(o-sp) {
@@ -88,7 +88,7 @@
     z-index: 1;
     position: absolute !important;
     @include mq(u-sp) {
-      top: 101% !important;
+      top: 102% !important;
       left: 64% !important;
     }
     @include mq(o-sp) {
