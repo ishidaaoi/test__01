@@ -17,9 +17,15 @@
   &__container {
     @include mq(o-sp) {
       display: flex;
-      margin-left: 120px;
+      margin-left: 10%;
       padding-top: 40px;
+      // max-width: 1080px;
+      // width: 100%;
     }
+  }
+  &__topic {
+    max-width: 254px;
+    width: 20vw;
   }
   &__item {
     @include mq(o-sp) {
@@ -63,7 +69,9 @@
   }
   &__online {
     @include mq(o-sp) {
-      margin-left: 70px;
+      margin-left: 12%;
+      max-width: 336px;
+      width: 28vw;
     }
   }
   &__onlinestore {
@@ -74,8 +82,10 @@
   }
   &__tocItem {
     @include mq(o-sp) {
-      width: 182px;
+      max-width: 182px;
+      width: 100%;
       margin-top: 14px;
+      line-break: normal;
     }
     &:hover {
       @include mq(o-sp) {
@@ -95,8 +105,11 @@
   }
   &__pointItem {
     @include mq(o-sp) {
-      width: 182px;
+      max-width: 182px;
+      width: 100%;
       margin-top: 14px;
+      line-break: normal;
+      margin-left: 4%;
     }
   }
   &__pointLink {
@@ -111,7 +124,9 @@
   }
   &__others {
     @include mq(o-sp) {
-      margin-left: 70px;
+      margin-right: -24%;
+      max-width: 200px;
+      width: 16vw;
     }
   }
   &__othersItem {

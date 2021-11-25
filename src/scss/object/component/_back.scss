@@ -12,7 +12,7 @@
     }
     @include mq(o-sp) {
       width: 100%;
-      min-height: 24vh;
+      min-height: 30vh;
     }
   }
   &__sec {
@@ -28,7 +28,7 @@
     }
     @include mq(o-sp) {
       width: 100%;
-      min-height: 24vh;
+      min-height: 30vh;
     }
   }
   &__thir {
@@ -44,7 +44,7 @@
     }
     @include mq(o-sp) {
       width: 100%;
-      min-height: 24vh;
+      min-height: 30vh;
     }
   }
 }

@@ -31,11 +31,6 @@
       align-items: center;
     }
   }
-  // &__eyecatch {
-  //   @include mq(u-sp) {
-  //     margin-bottom: 20px;
-  //   }
-  // }
   &__regard {
     border-radius: 10px;
     overflow: hidden;
@@ -69,7 +64,7 @@
     }
     @include mq(o-sp) {
       width: 20vw;
-      margin-left: 40px;
+      margin-left: 8%;
       margin-bottom: 40px;
       max-width: 230px;
     }

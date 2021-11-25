@@ -10,11 +10,12 @@
       background-repeat: no-repeat;
       background-size: contain;
       @include mq(u-sp) {
-        width: 150px;
+        max-width: 150px;
+        width: 50%;
         height: 100px;
         position: absolute;
         top: 30%;
-        left: 60%;
+        left: 50%;
       }
       @include mq(o-sp) {
         width: 150px;
@@ -63,11 +64,11 @@
     overflow: hidden;
     @include mq(u-sp) {
       width: 62vw;
-      margin-left: 130px;
+      margin-left: 34%;
     }
     @include mq(o-sp) {
-      width: 300px;
-      height: 300px;
+      max-width: 300px;
+      width: 24vw;
     }
     &--sec {
       display: inline-block;
@@ -79,8 +80,8 @@
         margin-left: 20px;
       }
       @include mq(o-sp) {
-        width: 300px;
-        height: 300px;
+        max-width: 300px;
+        width: 24vw;
         top: 200px;
       }
     }
@@ -94,8 +95,8 @@
         margin-left: 70px;
       }
       @include mq(o-sp) {
-        width: 410px;
-        height: 410px;
+        max-width: 410px;
+        width: 32vw;
       }
     }
   }
@@ -113,8 +114,8 @@
       left: 4%;
     }
     @include mq(o-sp) {
-      width: 320px;
-      height: 90px;
+      max-width: 320px;
+      width: 100%;
       padding: 15px 20px;
     }
     &::before {
@@ -175,7 +176,8 @@
         padding: 15px;
       }
       @include mq(o-sp) {
-        width: 410px;
+        max-width: 410px;
+        width: 100%;
         padding: 15px 20px;
       }
       &::before {
@@ -236,7 +238,8 @@
         left: 30%;
       }
       @include mq(o-sp) {
-        width: 320px;
+        max-width: 320px;
+        width: 100%;
         padding: 15px 20px;
       }
       &::before {

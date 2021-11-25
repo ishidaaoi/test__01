@@ -12,34 +12,39 @@
     display: flex;
     background-color: #000;
     overflow: hidden;
-
     &--middle {
       flex-direction: row-reverse;
     }
   }
 
   &__item {
-    background-image: url('#{$bgPath}indicate_04.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 760px;
-    height: 500px;
     position: relative;
     &:hover {
       transform: scale(1.1, 1.1);
       transition: 1.5s all;
     }
-
+    &--fir {
+      background-image: url('#{$bgPath}indicate_04.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 760px;
+      width: 60vw;
+      height: 500px;
+    }
     &--middle {
       background-image: url('#{$bgPath}indicate_05.png');
       background-size: cover;
-      width: 620px;
+      background-repeat: no-repeat;
+      max-width: 620px;
+      width: 50vw;
       height: 340px;
     }
     &--small {
       background-image: url('#{$bgPath}indicate_06.png');
       background-size: cover;
-      width: 700px;
+      background-repeat: no-repeat;
+      max-width: 700px;
+      width: 52vw;
       height: 280px;
     }
   }
@@ -135,6 +140,6 @@
   }
   &__load {
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 68%;
   }
 }
