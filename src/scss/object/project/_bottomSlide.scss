@@ -33,6 +33,8 @@
       height: 28px;
       opacity: 1;
     }
+    @include mq(u-sp) {
+    }
   }
   .slick-prev {
     position: absolute !important;
@@ -48,6 +50,7 @@
     @include mq(u-sp) {
       top: 92% !important;
       left: 63% !important;
+      right: 0px !important;
     }
   }
   .slick-dots {

@@ -1,8 +1,5 @@
 .p-card {
   align-items: center;
-  @include mq(o-sp) {
-  }
-
   &__wrap {
     @include mq(u-sp) {
       width: 68vw;
@@ -37,7 +34,8 @@
       height: 500px;
     }
     @include mq(o-sp) {
-      width: 440px;
+      max-width: 440px;
+      width: 36vw;
       border-radius: 0 10px 10px 0;
     }
   }
@@ -69,7 +67,8 @@
   &__inner {
     @include mq(o-sp) {
       margin-top: 20px;
-      margin-left: 270px;
+      position: relative;
+      left: 68%;
     }
   }
 }

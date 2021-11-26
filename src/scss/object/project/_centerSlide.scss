@@ -63,6 +63,7 @@
       opacity: 1;
       text-align: center;
       @include mq(o-sp) {
+        right: 0px !important;
       }
     }
     &:hover {
@@ -90,6 +91,7 @@
     @include mq(u-sp) {
       top: 102% !important;
       left: 64% !important;
+      right: 0px !important;
     }
     @include mq(o-sp) {
       top: 102% !important;

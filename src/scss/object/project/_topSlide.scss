@@ -87,6 +87,7 @@
       height: 28px;
       opacity: 1;
       @include mq(o-sp) {
+        right: 0px !important;
       }
     }
     &:hover {
@@ -114,7 +115,9 @@
     @include mq(u-sp) {
       top: 90% !important;
       left: 60% !important;
+      right: 0px !important;
     }
+
     @include mq(o-sp) {
       top: 92% !important;
       right: 41% !important;

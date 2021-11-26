@@ -58,7 +58,6 @@
   }
   &__logo {
     width: 120px;
-    // margin-right: 42vw;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -115,8 +114,6 @@
     line-height: 1;
   }
   &__list {
-    // overflow: auto;
-    // -webkit-overflow-scrolling: touch;
     background-color: $colorWhite;
   }
   &__item {
@@ -131,10 +128,6 @@
     &--question {
       border-bottom: none;
     }
-    // &--question {
-    //   border: 1px solid $colorBrown;
-    //   border-radius: 5px;
-    // }
   }
   &__sell {
     display: flex;
@@ -185,7 +178,6 @@
   }
   &__inner {
     display: flex;
-    // margin-bottom: 8vw;
     padding: 0 20px 20px;
     align-items: center !important;
   }
